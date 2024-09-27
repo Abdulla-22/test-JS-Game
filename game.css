@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+}
+#gameContainer {
+    width: 520px; /* Container width */
+    height: 400px; /* Container height */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* 10 equal columns */
+    grid-template-rows: repeat(13, 1fr);    /* 10 equal rows */
+    background-color: black;
+    border: 2px solid yellow;
+}
+
+.wall {
+    background-color: blue;
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 40px;  /* Take up entire grid cell */
+    height: 40px; /* Take up entire grid cell */
+}
+
+.player {
+    width: 40px;  /* Match grid cell size */
+    height: 40px; /* Match grid cell size */
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ghost {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    /* border-radius: 50%; */
+}
